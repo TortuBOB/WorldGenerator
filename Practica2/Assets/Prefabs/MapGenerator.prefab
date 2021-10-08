@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9221658516732442191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9221658516732442185}
+  - component: {fileID: 9221658516732442190}
+  - component: {fileID: 9221658516732442186}
+  - component: {fileID: 9221658516732442187}
+  - component: {fileID: 9221658516732442184}
+  - component: {fileID: 9221658518261708849}
+  - component: {fileID: 9221658518261708848}
+  - component: {fileID: 9221658518261709006}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9221658516732442185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9221658516732442190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c1100dbdc9e7f4fadf3b552583ebae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {x: 100, y: 100}
+  tileSize: {x: 1, y: 1}
+  tilePrefab: {fileID: 5956208752657094529, guid: 1d691f48fbb80d44599582c7b0730363,
+    type: 3}
+  wallPrefab: {fileID: 178168879439864130, guid: 0804bfe890249e8488c10daa83eefb91,
+    type: 3}
+  biomeList:
+  - {fileID: 9221658516732442186}
+  - {fileID: 9221658516732442187}
+  - {fileID: 9221658516732442184}
+  - {fileID: 9221658518261708849}
+  - {fileID: 9221658518261708848}
+  - {fileID: 9221658518261709006}
+  tileMapPrefab: {fileID: 8382297248552611471, guid: 2550c5819d87c56469e36c7466cee09c,
+    type: 3}
+--- !u!114 &9221658516732442186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6e1706614e634797dcbd1ba79b68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeName: Plains
+  floorTexture: {fileID: 2800000, guid: 796efa897f44a1b4aa90303c5edc1f0c, type: 3}
+  biomeAssets:
+  - {fileID: 6294749569893852988, guid: a023f4e1f3b73c3449e21dd4832833cb, type: 3}
+  - {fileID: 7177919256342772192, guid: c1936360172793c4c939dbe02f12442d, type: 3}
+  - {fileID: 7820769363798454472, guid: 2c74a2adc77bb9f4d89a96d91e089242, type: 3}
+  - {fileID: 937328752497284067, guid: 5cd5afb103e687e448a79336eebfc8ef, type: 3}
+--- !u!114 &9221658516732442187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6e1706614e634797dcbd1ba79b68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeName: Forest
+  floorTexture: {fileID: 2800000, guid: ec0903a93e625084ea0c3e41424e0082, type: 3}
+  biomeAssets:
+  - {fileID: 8247900904231875037, guid: 47846ddfe251aae43973be74f6644f6e, type: 3}
+  - {fileID: 7177919256342772192, guid: c1936360172793c4c939dbe02f12442d, type: 3}
+  - {fileID: 329468286443524990, guid: 8d1f8c1cc2bb75f4bb9b2256ebe1f677, type: 3}
+  - {fileID: 4753046358409877599, guid: a55479b60f9e8b545bdac4b416ebafac, type: 3}
+  - {fileID: 410678336177236033, guid: b2cace491a993424db754ecb627d77e0, type: 3}
+--- !u!114 &9221658516732442184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6e1706614e634797dcbd1ba79b68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeName: Lake
+  floorTexture: {fileID: 2800000, guid: 3290a23cd60bada4c9cbea633e923d0f, type: 3}
+  biomeAssets:
+  - {fileID: 1735366066983139309, guid: 8d876c6311ef14246b56b367067b1785, type: 3}
+  - {fileID: 8895926110402143911, guid: 8a9286f02136d0049bc4b3ecb5412130, type: 3}
+  - {fileID: 6144349059367263142, guid: e8945ca6101e1f546a31f2c41eef8a26, type: 3}
+--- !u!114 &9221658518261708849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6e1706614e634797dcbd1ba79b68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeName: Desert
+  floorTexture: {fileID: 2800000, guid: dc99fbe0dc5ed504385724d9472ffef9, type: 3}
+  biomeAssets:
+  - {fileID: 1860419367199952564, guid: 62bf1f929d7df7747a2eb61c0edb1467, type: 3}
+  - {fileID: 8882650683394908805, guid: 6612da48c14e164448c59f417d1d7885, type: 3}
+  - {fileID: 2200393553114989005, guid: dbc388458214a4d4fb899353e381734b, type: 3}
+  - {fileID: 2924653838885463582, guid: a1cd6cd51062f3048b233075d7230449, type: 3}
+  - {fileID: 2435681204335863339, guid: c7409f11b363243489b1c0100c4eb408, type: 3}
+  - {fileID: 6852770960296721045, guid: e03af60d444e03e48a06956047e3a542, type: 3}
+--- !u!114 &9221658518261708848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6e1706614e634797dcbd1ba79b68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeName: Mountains
+  floorTexture: {fileID: 2800000, guid: fa7afbceb74a8a04daca625c0b1e1524, type: 3}
+  biomeAssets:
+  - {fileID: 8397324416983952368, guid: 9ff26a172b45423418847583d577ad0b, type: 3}
+  - {fileID: 3549580358697145142, guid: 1a0303349b14a604086f1d35079c254c, type: 3}
+  - {fileID: 3823100775023621942, guid: 1c41c601a0a30194b95113543ba452dd, type: 3}
+  - {fileID: 2357319832307012394, guid: ad2ca82b198777d4280085ffb48abc21, type: 3}
+  - {fileID: 9148341971671436498, guid: 54e9918221c45bc4abf597351ae4c0e3, type: 3}
+--- !u!114 &9221658518261709006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221658516732442191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6e1706614e634797dcbd1ba79b68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  biomeName: Cold
+  floorTexture: {fileID: 2800000, guid: 7883ee79e4f92b84baa7f2bed55321d0, type: 3}
+  biomeAssets:
+  - {fileID: 3825710399235633768, guid: 67579a4a5b2f8204383dafed3b7a3a10, type: 3}
+  - {fileID: 6159452660065083490, guid: 14c23d83ecb58a243a1de7e84aa78a38, type: 3}
+  - {fileID: 7190369327951498472, guid: 797101cfb1e6ee14e8fcb3519935fa4e, type: 3}
