@@ -62,40 +62,43 @@ public class Child : MonoBehaviour
             growContador = 0;
             Crecer();
         }
-        //rotacion
-        Vector3 look = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
-        transform.LookAt(look);
 
-        //movimiento
-        if (Vector3.Distance(target.transform.position, transform.position) > distance)
+        if(target != null)
         {
-            if (animacion.GetBool("Walk") == false)
+            //rotacion
+            Vector3 look = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
+            transform.LookAt(look);
+
+            //movimiento
+            if (Vector3.Distance(target.transform.position, transform.position) > distance)
             {
-                animacion.SetBool("Walk", true);
+                if (animacion.GetBool("Walk") == false)
+                {
+                    animacion.SetBool("Walk", true);
+                }
+                Vector3 direc = target.transform.position - transform.position;
+                direc = direc.normalized;
+                direc.y = 0;
+                transform.position += direc * speed * Time.deltaTime;
             }
-            Vector3 direc = target.transform.position - transform.position;
-            direc = direc.normalized;
-            direc.y = 0;
-            transform.position += direc * speed * Time.deltaTime;
-        }
-        else
-        {
-            animacion.SetBool("Walk", false);
-            if (CompareTag("ChildTurtle"))
+            else
             {
-                if (Vector3.Distance(transform.position, player.gameObject.transform.position) < rangoVision)
+                animacion.SetBool("Walk", false);
+                if (CompareTag("ChildTurtle"))
                 {
-                    animacion.SetBool("Hide", true);
+                    if (Vector3.Distance(transform.position, player.gameObject.transform.position) < rangoVision)
+                    {
+                        animacion.SetBool("Hide", true);
+                    }
+                    else
+                    {
+                        animacion.SetBool("Hide", false);
+                    }
                 }
-                else
-                {
-                    animacion.SetBool("Hide", false);
-                }
+
             }
-            
         }
 
-        
     }
 
     private void Crecer()

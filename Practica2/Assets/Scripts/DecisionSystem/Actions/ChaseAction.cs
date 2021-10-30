@@ -50,15 +50,18 @@ public class ChaseAction : IAction
             animal.animacion.SetBool("Run", true);
         }
 
-        //perseguir
-        Vector3 direc = target.transform.position - anim.transform.position;
-        direc = direc.normalized;
-        direc.y = 0;
-        anim.transform.position += direc * animal.velocidadCorrer * Time.deltaTime;
-        //rotacion
-        Vector3 look = new Vector3(target.transform.position.x, anim.transform.position.y, target.transform.position.z);
-        anim.transform.LookAt(look);
-
+        if(target != null)
+        {
+            //perseguir
+            Vector3 direc = target.transform.position - anim.transform.position;
+            direc = direc.normalized;
+            direc.y = 0;
+            anim.transform.position += direc * animal.velocidadCorrer * Time.deltaTime;
+            //rotacion
+            Vector3 look = new Vector3(target.transform.position.x, anim.transform.position.y, target.transform.position.z);
+            anim.transform.LookAt(look);
+        }
+        
         //energía.
         contador += Time.deltaTime;
         if (contador >= time)
