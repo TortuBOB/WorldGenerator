@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c1100dbdc9e7f4fadf3b552583ebae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  map: {x: 100, y: 100}
+  map: {x: 50, y: 50}
   tileSize: {x: 1, y: 1}
   tilePrefab: {fileID: 5956208752657094529, guid: 1d691f48fbb80d44599582c7b0730363,
     type: 3}
@@ -83,6 +83,8 @@ MonoBehaviour:
   - {fileID: 7177919256342772192, guid: c1936360172793c4c939dbe02f12442d, type: 3}
   - {fileID: 7820769363798454472, guid: 2c74a2adc77bb9f4d89a96d91e089242, type: 3}
   - {fileID: 937328752497284067, guid: 5cd5afb103e687e448a79336eebfc8ef, type: 3}
+  animalAssets:
+  - {fileID: 6209687996428904166, guid: a6e9cd301f1be8e47b5bf3c6f71e3e78, type: 3}
 --- !u!114 &9221658516732442187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +105,8 @@ MonoBehaviour:
   - {fileID: 329468286443524990, guid: 8d1f8c1cc2bb75f4bb9b2256ebe1f677, type: 3}
   - {fileID: 4753046358409877599, guid: a55479b60f9e8b545bdac4b416ebafac, type: 3}
   - {fileID: 410678336177236033, guid: b2cace491a993424db754ecb627d77e0, type: 3}
+  animalAssets:
+  - {fileID: 8341027612897035136, guid: 0bc3635a0d5d38d40a6263dd2eeeda48, type: 3}
 --- !u!114 &9221658516732442184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,6 +125,8 @@ MonoBehaviour:
   - {fileID: 1735366066983139309, guid: 8d876c6311ef14246b56b367067b1785, type: 3}
   - {fileID: 8895926110402143911, guid: 8a9286f02136d0049bc4b3ecb5412130, type: 3}
   - {fileID: 6144349059367263142, guid: e8945ca6101e1f546a31f2c41eef8a26, type: 3}
+  animalAssets:
+  - {fileID: 7306798515386796127, guid: a01726e339c438544bf8d7b58583fe6f, type: 3}
 --- !u!114 &9221658518261708849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +148,8 @@ MonoBehaviour:
   - {fileID: 2924653838885463582, guid: a1cd6cd51062f3048b233075d7230449, type: 3}
   - {fileID: 2435681204335863339, guid: c7409f11b363243489b1c0100c4eb408, type: 3}
   - {fileID: 6852770960296721045, guid: e03af60d444e03e48a06956047e3a542, type: 3}
+  animalAssets:
+  - {fileID: 830327418702120090, guid: db696ddb9519a7b46b337f0b4e21cfef, type: 3}
 --- !u!114 &9221658518261708848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +170,9 @@ MonoBehaviour:
   - {fileID: 3823100775023621942, guid: 1c41c601a0a30194b95113543ba452dd, type: 3}
   - {fileID: 2357319832307012394, guid: ad2ca82b198777d4280085ffb48abc21, type: 3}
   - {fileID: 9148341971671436498, guid: 54e9918221c45bc4abf597351ae4c0e3, type: 3}
+  animalAssets:
+  - {fileID: 5380087859856260790, guid: cea9cf0fcfd20cf4f9ba3c642e19b2ab, type: 3}
+  - {fileID: 290248182433945773, guid: 581a9bfb71329b24ba52189369658da4, type: 3}
 --- !u!114 &9221658518261709006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,3 +191,5 @@ MonoBehaviour:
   - {fileID: 3825710399235633768, guid: 67579a4a5b2f8204383dafed3b7a3a10, type: 3}
   - {fileID: 6159452660065083490, guid: 14c23d83ecb58a243a1de7e84aa78a38, type: 3}
   - {fileID: 7190369327951498472, guid: 797101cfb1e6ee14e8fcb3519935fa4e, type: 3}
+  animalAssets:
+  - {fileID: 6250810358643628995, guid: 6c6a631aaebae5d408a634e4926a1d9b, type: 3}
